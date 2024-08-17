@@ -28,14 +28,14 @@ export interface Car {
 export const HomeScreen = () => {
     //arreglo con la lista de productos
     const products: Product[] = [
-        { id: 1, name: 'Funda de arroz', price: 1.80, stock: 5, pathImage: 'https://www.megaprimavera.com/wp-content/uploads/arroz-blanco-gustadina-2-kg.png' },
-        { id: 2, name: 'Funda de azucar', price: 1.30, stock: 7, pathImage: 'https://tienda.propieta.ec/wp-content/uploads/2021/03/azucar-blanca.jpg' },
-        { id: 3, name: 'Funda de papas', price: 2.00, stock: 0, pathImage: 'https://www.supermercadosantamaria.com/documents/10180/10504/65700_G.jpg' },
-        { id: 4, name: 'Funda de fideos', price: 0.80, stock: 4, pathImage: 'https://www.supermercadosantamaria.com/documents/10180/10504/133101593_M.jpg' },
-        { id: 5, name: 'Funda de sal', price: 0.60, stock: 8, pathImage: 'https://www.supermercadosantamaria.com/documents/10180/10504/87990_M.jpg' },
-        { id: 6, name: 'Funda de sal', price: 0.60, stock: 8, pathImage: 'https://www.supermercadosantamaria.com/documents/10180/10504/87990_M.jpg' },
-        { id: 7, name: 'Funda de sal', price: 0.60, stock: 8, pathImage: 'https://www.supermercadosantamaria.com/documents/10180/10504/87990_M.jpg' },
-        { id: 8, name: 'Funda de sal', price: 0.60, stock: 8, pathImage: 'https://www.supermercadosantamaria.com/documents/10180/10504/87990_M.jpg' },
+        { id: 1, name: 'Computador', price: 780, stock: 5, pathImage: 'https://todotintasysuministros.com/assets/media/blog/todo-tintas-2.jpg' },
+        { id: 2, name: 'Teclado', price: 10, stock: 7, pathImage: 'https://http2.mlstatic.com/D_NQ_NP_2X_808723-MLA74780663109_022024-F.webp' },
+        { id: 3, name: 'Adaptador usb', price: 20, stock: 0, pathImage: 'https://http2.mlstatic.com/D_NQ_NP_2X_830467-MLU72035239519_092023-F.webp' },
+        { id: 4, name: 'Adapatador', price: 10, stock: 4, pathImage: 'https://http2.mlstatic.com/D_NQ_NP_2X_664981-MEC71008870317_082023-F.webp' },
+        { id: 5, name: 'Switch', price: 150, stock: 8, pathImage: 'https://http2.mlstatic.com/D_NQ_NP_2X_647177-MEC72209802211_102023-F.webp' },
+        { id: 6, name: 'Camara', price: 60, stock: 8, pathImage: 'https://http2.mlstatic.com/D_NQ_NP_2X_935526-MEC72162844285_102023-F.webp' },
+        { id: 7, name: 'Telefono', price: 600, stock: 8, pathImage: 'https://http2.mlstatic.com/D_NQ_NP_2X_813899-MEC75530995253_042024-F.webp' },
+        { id: 8, name: 'Television', price: 500, stock: 8, pathImage: 'https://http2.mlstatic.com/D_NQ_NP_2X_915609-MEC76071226900_052024-F.webp' },
     ];
 
     //hook useState: manipular el arreglo de productos

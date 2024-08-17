@@ -19,6 +19,8 @@ interface Props {
 interface FormRegister {
   email: string;
   password: string;
+  telefono: string;
+  pais:string;
 }
 
 export const RegisterScreen = ({ users, handleAddUser }: Props) => {
@@ -26,7 +28,9 @@ export const RegisterScreen = ({ users, handleAddUser }: Props) => {
   //hook useState: Manipular el estado del formulario
   const [formRegister, setFormRegister] = useState<FormRegister>({
     email: '',
-    password: ''
+    password: '',
+    telefono:'',
+    pais:''
   });
 
   //hook useState: permitir que la contraseña sea visible o no
@@ -70,7 +74,7 @@ export const RegisterScreen = ({ users, handleAddUser }: Props) => {
     const newUser: User = {
       id: getNewId,
       email: formRegister.email,
-      password: formRegister.password
+      password: formRegister.password,
     }
     //Guardar el nuevo usuario en el arreglo
     handleAddUser(newUser);
@@ -115,6 +119,14 @@ export const RegisterScreen = ({ users, handleAddUser }: Props) => {
             isPassword={hiddenPassword}
             hasIcon={true}
             actionIcon={() => setHiddenPassword(!hiddenPassword)} />
+            <InputComponent
+            placeholder='Telefono'
+            handleSetValues={handleSetValues}
+            name='telefono' />
+            <InputComponent
+            placeholder='Pais'
+            handleSetValues={handleSetValues}
+            name='pais' />
         </View>
         <ButtonComponent textButton='Registrar' actionButton={handleSignUp} />
         <TouchableOpacity
